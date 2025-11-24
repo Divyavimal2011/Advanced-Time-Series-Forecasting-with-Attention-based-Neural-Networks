@@ -3,7 +3,7 @@ Advanced Time Series Forecasting with Attention-based Neural Networks
 
 This project implements multivariate time series forecasting using a baseline LSTM model and an attention-based encoder–decoder neural network. The script is completely Colab-ready and runs in a single code cell.
 
-Features
+# Features
 
 Synthetic multivariate time series dataset generation
 
@@ -23,7 +23,7 @@ Attention weight visualization
 
 Model and prediction file saving
 
-Dataset Description
+# Dataset Description
 
 A synthetic dataset with 1400 samples and 4 columns:
 
@@ -37,8 +37,8 @@ target: weighted combination of all features + noise
 
 The target variable is predicted one step ahead using the past 36 timesteps.
 
-Model Architectures
-Baseline LSTM
+# Model Architectures
+# Baseline LSTM
 
 LSTM layer with 64 units
 
@@ -48,7 +48,7 @@ Optimizer: Adam
 
 Loss: MSE
 
-Attention Model
+# Attention Model
 
 Encoder LSTM with return sequences
 
@@ -60,7 +60,7 @@ Dense layers for final output
 
 The attention model provides both predictions and attention weights for interpretability.
 
-Training Details
+# Training Details
 
 Both models are trained using:
 
@@ -74,7 +74,7 @@ Batch size: 32
 
 Epochs: 40–60
 
-The script outputs:
+# The script outputs:
 
 MAE and RMSE for both models
 
@@ -82,11 +82,11 @@ Plots comparing actual vs predicted values
 
 Attention heatmap for a sample test sequence
 
-Results
+# Results
 
 The attention model typically performs better than the baseline LSTM, producing lower MAE and RMSE. The script prints metrics after testing and shows plots to visually compare performance.
 
-Output Files
+# Output Files
 
 The script automatically saves the following:
 
@@ -98,7 +98,7 @@ predictions_scaled.csv
 
 These files can be used for reports, further training, or deployment.
 
-How to Run
+# How to Run
 
 Open Google Colab
 
